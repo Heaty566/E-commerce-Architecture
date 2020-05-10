@@ -1,0 +1,19 @@
+.card {
+    &__text {
+        position: absolute;
+        height: 23.5rem;
+        left: 29.35%;
+        right: 29.15%;
+        top: calc(50% - 23.5rem/2 - 2.4rem);
+
+        font-family: $font-default;
+        font-size: 7.47448rem;
+        line-height: 7.8rem;
+        /* or 105% */
+
+        text-align: center;
+        letter-spacing: 0.2rem;
+
+        color: #FFFFFF;
+    }
+}
