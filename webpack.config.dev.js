@@ -5,15 +5,15 @@ const TerserWebpackPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: "./src/js/index.js",
+  entry: "./src/index.js",
   output: {
-    filename: "bundle.[contenthash].js",
-    path: path.resolve(__dirname, "./dist"),
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "dist",
   },
   mode: "development",
   module: {
     rules: [
-      //JS LOADER
       {
         test: /\.css$/,
         exclude: /node_modules/,
@@ -25,51 +25,38 @@ module.exports = {
           },
         },
       },
-
-      //HTML LOADER
-      {
-        test: /\.html$/,
-        use: ["html-loader"],
-      },
-
-      //ASSET LOADER
-      // {
-      //   test: /\.(woff|woff2|tff|eot|otf)$/,
-      //   use: [
-      //     {
-      //       loader: "file-loader",
-      //       options: {
-      //         outputPath: "asset/font",
-      //       },
-      //     },
-      //     "url-loader",
-      //   ],
-      // },
-
-      //IMAGE LOADER
-      {
-        // test: /\.png$/,
-        // loader: "file-loader",
-        // options: {
-        //   outputPath: "asset/images",
-        // },
-      },
-
-      //CSS LOADER
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
-
-      //SCSS LOADER
+      {
+        test: /\.html$/,
+        use: ["html-loader"],
+      },
       {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(jpg|png|gif|svg)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 50000,
+            outputPath: "asset/images",
+          },
+        },
+      },
 
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        loader: "url-loader?limit=100000",
+        test: /\.(woff|eot|ttf|otf)/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 50000,
+            outputPath: "asset/fonts",
+          },
+        },
       },
     ],
   },
@@ -77,7 +64,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new TerserWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "styles.[contenthash].css",
+      filename: "style.css",
     }),
     new HtmlWebpackPlugin({
       template: "src/index.html",
