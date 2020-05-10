@@ -1,1 +1,32 @@
 
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //62.5% === 10px
+    font-family: $font-default;
+
+}
+
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mobile {
+    
+    border: 1px black solid;
+ max-width: 37.5rem;
+ min-height: 81.2rem;
+ width: 100%;
+ 
+}
+
