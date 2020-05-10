@@ -40,9 +40,10 @@ body {
     object-fit: cover; }
   .launch__title {
     position: absolute;
-    left: 50%;
-    top: 47%;
-    transform: translate(-50%, -47%);
+    left: 53%;
+    top: 45%;
+    letter-spacing: 2px;
+    transform: translate(-53%, -45%);
     font-family: "SFPro", sans-serif;
     font-size: 7.47448rem;
     color: #FFFFFF; }
