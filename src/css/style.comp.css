@@ -30,6 +30,19 @@ body {
   font-family: "Nunito";
   src: url(../../asset/fonts/nunito/Nunito-Black.ttf), url(../../asset/fonts/nunito/Nunito-BlackItalic.ttf), url(../../asset/fonts/nunito/Nunito-Bold.ttf), url(../../asset/fonts/nunito/Nunito-BoldItalic.ttf), url(../../asset/fonts/nunito/Nunito-ExtraBold.ttf), url(../../asset/fonts/nunito/Nunito-ExtraBoldItalic.ttf), url(../../asset/fonts/nunito/Nunito-ExtraLight.ttf), url(../../asset/fonts/nunito/Nunito-ExtraLightItalic.ttf), url(../../asset/fonts/nunito/Nunito-Italic.ttf), url(../../asset/fonts/nunito/Nunito-Light.ttf), url(../../asset/fonts/nunito/Nunito-LightItalic.ttf), url(../../asset/fonts/nunito/Nunito-Regular.ttf), url(../../asset/fonts/nunito/Nunito-SemiBold.ttf), url(../../asset/fonts/nunito/Nunito-SemiBoldItalic.ttf); }
 
+.text__header-3 {
+  font-size: 2.2em; }
+
+.text__span-20 {
+  font-size: 2em;
+  font-weight: 500; }
+
+.text__body-16 {
+  font-size: 1.6em; }
+
+.u-m-b-smallest {
+  margin-bottom: 0.8em; }
+
 .launch {
   background: url("../asset/images/shape/oval-home.svg") 50% 45% no-repeat, #ECECEC;
   padding: 7.3em 0;
@@ -49,50 +62,49 @@ body {
     font-size: 7.47448rem; }
 
 .onboarding1 {
-  height: 100%;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: column;
   background-image: url(../asset/images/special-offers.png);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 17.9rem; }
-  .onboarding1__container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 50.2rem;
-    align-items: center; }
-    .onboarding1__container__title {
-      font-size: 2.2rem;
-      line-height: 2.6rem;
-      margin-bottom: 0.8rem; }
-    .onboarding1__container__description {
-      font-size: 1.6rem;
+  .onboarding1__content {
+    flex: 1; }
+    .onboarding1__content__title {
+      line-height: 2.6rem; }
+    .onboarding1__content__description {
       line-height: 1.9rem;
       width: 29.5rem;
       text-align: center;
       color: #808080; }
-  .onboarding1__indicator {
-    padding-top: 16.3rem;
-    font-size: 2rem;
-    height: 2.4rem;
-    line-height: 2.3px;
-    color: #808080;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    .onboarding1__indicator__control--active {
-      color: #fd3e75; }
-    .onboarding1__indicator__button {
-      height: 0.4rem;
-      width: 6.4rem;
-      display: flex;
-      justify-content: space-between; }
-      .onboarding1__indicator__button__item {
-        border-radius: 2px;
-        width: 1.1rem;
-        height: 0.4rem;
-        background-color: #fe9fba; }
-        .onboarding1__indicator__button__item__long {
-          width: 2.2rem;
-          background-color: #fd3e75; }
+
+.indicator-bottom {
+  padding-top: 16.3rem;
+  color: #808080;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.8rem; }
+
+.indicator__control {
+  flex-basis: 1;
+  text-align: center; }
+
+.indicator__item {
+  border-radius: 2px;
+  display: inline-block;
+  width: 1.1rem;
+  height: 0.4rem;
+  margin: 0 0.5rem;
+  background-color: #fe9fba; }
+  .indicator__item--active {
+    width: 2.2rem;
+    background-color: #fd3e75; }
+
+.indicator__button--active {
+  color: #fd3e75; }
 
 @font-face {
   font-family: "SFPro";

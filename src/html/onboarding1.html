@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is a scss and html project build base on architecture" />
+    <meta
+      name="description"
+      content="This is a scss and html project build base on architecture"
+    />
     <title>SCSS-ARCHITECTURE</title>
     <link rel="stylesheet" href="../css/style.comp.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="mobile">
-        <div class="onboarding1">
-            <div class="onboarding1__container">
-                <h1 class="onboarding1__container__title">Special Offers</h1>
-                <p class="onboarding1__container__description">Receive your special coupons right in the app.</p>
-            </div>
-            <div class="onboarding1__indicator">
-                <span class="onboarding1__indicator__control">Skip</span>
-                <div class="onboarding1__indicator__button">
-                    <span class="onboarding1__indicator__button__item onboarding1__indicator__button__item__long">
-                    </span>
-                    <span class="onboarding1__indicator__button__item"></span>
-                    <span class="onboarding1__indicator__button__item"></span>
-                </div>
-                <span class="onboarding1__indicator__control onboarding1__indicator__control--active">Next</span>
-            </div>
+      <div class="onboarding1">
+        <div class="onboarding1__content">
+          <h3 class="onboarding1__title text__header-3 u-m-b-smallest">
+            Special Offers
+          </h3>
+          <p class="onboarding1__description text__body-16">
+            Receive your special coupons right in the app.
+          </p>
         </div>
+        <div class="indicator-bottom">
+          <span class="indicator__button text__span-20">Skip</span>
+          <div class="indicator__control">
+            <span class="indicator__item indicator__item--active"> </span>
+            <span class="indicator__item"></span>
+            <span class="indicator__item"></span>
+          </div>
+          <span
+            class="indicator__button text__span-20 indicator__button--active"
+            >Next</span
+          >
+        </div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
