@@ -1,25 +1,17 @@
 .onboarding1 {
-  display: flex;
-  justify-content: stretch;
-  align-items: stretch;
+  min-height: inherit;
+  @include flexAlignCenter(flex-end);
   flex-direction: column;
-  background-image: url(../asset/images/special-offers.png);
-  background-repeat: no-repeat;
-  background-position: {
-    x: center;
-    y: 17.9rem;
-  }
+  background: url(../asset/images/special-offers.png) center 17.9em no-repeat;
   &__content {
-    flex: 1;
-    &__title {
-      line-height: 2.6rem;
-    }
+    padding-bottom: 16.3rem;
+  }
 
-    &__description {
-      line-height: 1.9rem;
-      width: 29.5rem;
-      text-align: center;
-      color: $semantic-color-black-3;
-    }
+  //remainder title
+  // &__title {
+  // }
+
+  &__description {
+    color: $semantic-color-black-3;
   }
 }
