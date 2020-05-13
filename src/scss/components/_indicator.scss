@@ -30,6 +30,7 @@
   }
 
   &__button {
+    cursor: pointer;
     &--active {
       color: $primary-color-main;
     }
