@@ -91,10 +91,34 @@ body {
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
-  background: url(../asset/images/special-offers.png) center 17.9em no-repeat; }
+  background: url(../asset/images/special-offers.png) center 17.9rem no-repeat; }
   .onboarding1__content {
     padding-bottom: 16.3rem; }
   .onboarding1__description {
+    color: #808080; }
+
+.onboarding2 {
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  background: url(../asset/images/smart-search.png) center 18.4rem no-repeat, url(../asset/images/shape/focus-square.svg) center 18.4rem no-repeat; }
+  .onboarding2__content {
+    padding-bottom: 16.3rem; }
+  .onboarding2__description {
+    color: #808080; }
+
+.onboarding3 {
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  background: url(../asset/images/order-your-clothes.png) center 18.4rem no-repeat; }
+  .onboarding3__content {
+    padding-bottom: 16.3rem; }
+  .onboarding3__description {
     color: #808080; }
 
 .indicator-bottom {
@@ -103,6 +127,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+
+.indicator-get-started {
+  color: #808080;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .indicator__control {
   flex-basis: 1;

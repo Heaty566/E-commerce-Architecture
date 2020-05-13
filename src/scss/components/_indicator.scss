@@ -5,6 +5,12 @@
     @include flexAlignCenter(space-between);
   }
 
+  &-get-started {
+    color: $semantic-color-black-3;
+    width: 100%;
+    @include flexAlignCenter(center);
+  }
+
   &__control {
     flex-basis: 1;
     text-align: center;
