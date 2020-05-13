@@ -1,4 +1,14 @@
-*, *::before, *::after {
+@font-face {
+  font-family: "SFPro";
+  src: url(../../asset/fonts/sfpro/SF-Pro-Text-Bold.otf) format("test"), url(../../asset/fonts/sfpro/SF-Pro-Text-BoldItalic.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-Heavy.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-HeavyItalic.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-Light.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-LightItalic.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-Medium.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-MediumItalic.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-Regular.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-RegularItalic.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-Semibold.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-SemiboldItalic.otf); }
+
+@font-face {
+  font-family: "Nunito";
+  src: url(../../asset/fonts/nunito/Nunito-Black.ttf), url(../../asset/fonts/nunito/Nunito-BlackItalic.ttf), url(../../asset/fonts/nunito/Nunito-Bold.ttf), url(../../asset/fonts/nunito/Nunito-BoldItalic.ttf), url(../../asset/fonts/nunito/Nunito-ExtraBold.ttf), url(../../asset/fonts/nunito/Nunito-ExtraBoldItalic.ttf), url(../../asset/fonts/nunito/Nunito-ExtraLight.ttf), url(../../asset/fonts/nunito/Nunito-ExtraLightItalic.ttf), url(../../asset/fonts/nunito/Nunito-Italic.ttf), url(../../asset/fonts/nunito/Nunito-Light.ttf), url(../../asset/fonts/nunito/Nunito-LightItalic.ttf), url(../../asset/fonts/nunito/Nunito-Regular.ttf), url(../../asset/fonts/nunito/Nunito-SemiBold.ttf), url(../../asset/fonts/nunito/Nunito-SemiBoldItalic.ttf); }
+
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: inherit; }
@@ -9,31 +19,94 @@ html {
 
 body {
   box-sizing: border-box;
-  display: flex;
   border: 1px solid red;
   min-height: 100vh;
-  justify-content: center;
-  align-items: center; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+a,
+li {
+  text-decoration: none;
+  list-style-type: none; }
 
 .mobile {
   max-width: 37.5rem;
   height: 100%;
   min-height: 81.2rem;
-  width: 100vw; }
+  width: 100%;
+  border: 1px solid black; }
 
-@font-face {
-  font-family: "SFPro";
-  src: url(../../asset/fonts/sfpro/SF-Pro-Text-Bold.otf) format("test"), url(../../asset/fonts/sfpro/SF-Pro-Text-BoldItalic.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-Heavy.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-HeavyItalic.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-Light.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-LightItalic.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-Medium.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-MediumItalic.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-Regular.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-RegularItalic.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-Semibold.otf), url(../../asset/fonts/sfpro/SF-Pro-Text-SemiboldItalic.otf); }
+.text__header-3 {
+  font-size: 2.2rem;
+  color: #1d1d1d; }
 
-@font-face {
-  font-family: "Nunito";
-  src: url(../../asset/fonts/nunito/Nunito-Black.ttf), url(../../asset/fonts/nunito/Nunito-BlackItalic.ttf), url(../../asset/fonts/nunito/Nunito-Bold.ttf), url(../../asset/fonts/nunito/Nunito-BoldItalic.ttf), url(../../asset/fonts/nunito/Nunito-ExtraBold.ttf), url(../../asset/fonts/nunito/Nunito-ExtraBoldItalic.ttf), url(../../asset/fonts/nunito/Nunito-ExtraLight.ttf), url(../../asset/fonts/nunito/Nunito-ExtraLightItalic.ttf), url(../../asset/fonts/nunito/Nunito-Italic.ttf), url(../../asset/fonts/nunito/Nunito-Light.ttf), url(../../asset/fonts/nunito/Nunito-LightItalic.ttf), url(../../asset/fonts/nunito/Nunito-Regular.ttf), url(../../asset/fonts/nunito/Nunito-SemiBold.ttf), url(../../asset/fonts/nunito/Nunito-SemiBoldItalic.ttf); }
+.text__header-2 {
+  font-size: 2.4rem;
+  color: #1d1d1d; }
+
+.text__span-16 {
+  font-size: 1.6rem;
+  font-weight: bold; }
+
+.text__span-20 {
+  font-size: 2rem;
+  font-weight: 500; }
+
+.text__body-16 {
+  font-size: 1.6em; }
+
+.u-m-b-1 {
+  margin-bottom: 0.8rem; }
+
+.u-m-b-2 {
+  margin-bottom: 1.6rem; }
+
+.u-m-b-3 {
+  margin-bottom: 2.4rem; }
+
+.u-m-b-4 {
+  margin-bottom: 3.2rem; }
+
+.u-m-b-5 {
+  margin-bottom: 4rem; }
+
+.u-p-b-1 {
+  padding-bottom: 0.8rem; }
+
+.u-p-b-6 {
+  padding-bottom: 4.8rem; }
+
+.u-p-r-1 {
+  padding-right: 0.8rem; }
+
+.u-p-r-4 {
+  padding-right: 3.2rem; }
+
+.u-p-t-2 {
+  padding-top: 1.6rem; }
+
+.u-p-6 {
+  padding: 4.8rem; }
+
+.u-p-4 {
+  padding: 3.4rem; }
+
+.u-p-x-7 {
+  padding: 0 5.6rem; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
 
 .launch {
-  background: url("../asset/images/shape/oval-home.svg") 50% 45% no-repeat, #ECECEC;
+  background: url("../asset/images/shape/oval-home.svg") 50% 45% no-repeat, #ececec;
   padding: 7.3em 0;
   position: relative;
-  height: 100%; }
+  height: 100%;
+  color: #fefefe; }
   .launch__image {
     height: 100%;
     object-fit: cover; }
@@ -43,9 +116,138 @@ body {
     top: 45%;
     letter-spacing: 2px;
     transform: translate(-53%, -45%);
-    font-family: "SFPro", sans-serif;
-    font-size: 7.47448rem;
-    color: #FFFFFF; }
+    font-size: 7.47448rem; }
+
+.onboarding1 {
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  background: url(../asset/images/special-offers.png) center 17.9rem no-repeat; }
+  .onboarding1__content {
+    padding-bottom: 16.3rem; }
+  .onboarding1__description {
+    color: #808080; }
+
+.onboarding2 {
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  background: url(../asset/images/smart-search.png) center 18.4rem no-repeat, url(../asset/images/shape/focus-square.svg) center 18.4rem no-repeat; }
+  .onboarding2__content {
+    padding-bottom: 16.3rem; }
+  .onboarding2__description {
+    color: #808080; }
+
+.onboarding3 {
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  background: url(../asset/images/order-your-clothes.png) center 18.4rem no-repeat; }
+  .onboarding3__content {
+    padding-bottom: 16.3rem; }
+  .onboarding3__description {
+    color: #808080; }
+
+.login__header span {
+  display: block; }
+
+.indicator-bottom {
+  color: #808080;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.indicator-get-started {
+  color: #808080;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.indicator__control {
+  flex-basis: 1;
+  text-align: center; }
+
+.indicator__item {
+  border-radius: 2px;
+  display: inline-block;
+  width: 1.1rem;
+  height: 0.4rem;
+  margin: 0 0.5rem;
+  background-color: #fe9fba; }
+  .indicator__item--active {
+    width: 2.2rem;
+    background-color: #fd3e75; }
+
+.indicator__button {
+  cursor: pointer; }
+  .indicator__button--active {
+    color: #fd3e75; }
+
+.segment__group {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.segment__item {
+  flex: 1;
+  text-align: center;
+  display: inline-block;
+  position: relative; }
+  .segment__item:first-child {
+    margin-right: 2.8rem; }
+
+.segment__link {
+  display: block;
+  color: #808080; }
+  .segment__link-active {
+    color: #1d1d1d; }
+    .segment__link-active::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      width: 100%;
+      display: block;
+      border-bottom: 3px solid #fd3e75;
+      border-radius: 3px 3px 0 0; }
+
+.form {
+  border-radius: 1.6rem;
+  box-shadow: 0rem 1.4rem 4.3rem rgba(0, 0, 0, 0.08); }
+  .form__group {
+    padding: 1.6rem 2.4rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .form__group:not(:last-child) {
+      border-bottom: 1px solid #ececec; }
+  .form__input {
+    overflow: hidden; }
+    .form__input label {
+      color: #808080;
+      text-transform: capitalize;
+      display: block;
+      overflow: hidden; }
+    .form__input input {
+      letter-spacing: 1px;
+      font-weight: 600;
+      padding-top: 0.8rem;
+      font-size: 1.7rem;
+      border: none;
+      outline: none; }
+  .form__extra-check {
+    margin-left: 5px; }
+  .form__extra-link {
+    margin-left: 5px;
+    color: #808080; }
 
 @font-face {
   font-family: "SFPro";

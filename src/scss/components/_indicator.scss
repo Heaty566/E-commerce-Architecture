@@ -1,0 +1,38 @@
+.indicator {
+  &-bottom {
+    color: $semantic-color-black-3;
+    width: 100%;
+    @include flexAlignCenter(space-between);
+  }
+
+  &-get-started {
+    color: $semantic-color-black-3;
+    width: 100%;
+    @include flexAlignCenter(center);
+  }
+
+  &__control {
+    flex-basis: 1;
+    text-align: center;
+  }
+
+  &__item {
+    border-radius: 2px;
+    display: inline-block;
+    width: 1.1rem;
+    height: 0.4rem;
+    margin: 0 0.5rem;
+    background-color: $primary-color-lighter;
+    &--active {
+      width: 2.2rem;
+      background-color: $primary-color-main;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    &--active {
+      color: $primary-color-main;
+    }
+  }
+}

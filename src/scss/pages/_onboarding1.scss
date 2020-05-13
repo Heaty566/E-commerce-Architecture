@@ -1,0 +1,17 @@
+.onboarding1 {
+  min-height: inherit;
+  @include flexAlignCenter(flex-end);
+  flex-direction: column;
+  background: url(../asset/images/special-offers.png) center 17.9rem no-repeat;
+  &__content {
+    padding-bottom: 16.3rem;
+  }
+
+  //remainder title
+  // &__title {
+  // }
+
+  &__description {
+    color: $semantic-color-black-3;
+  }
+}

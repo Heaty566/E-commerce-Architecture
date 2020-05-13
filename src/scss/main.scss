@@ -1,13 +1,16 @@
 @import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
 
-@import "base/base", "base/fonts", "base/typography", "base/helpers";
+@import "base/fonts", "base/base", "base/typography", "base/helpers",
+  "base/utilities";
 
 @import "layout/header", "layout/footer";
 
-@import "pages/home" , "pages/launch";
+@import "pages/home", "pages/launch", "pages/onboarding1", "pages/onboarding2",
+  "pages/onboarding3.scss", "pages/login.scss";
 
 @import "themes/default";
 
-@import "./base/fonts.scss";
+@import "components/indicator", "components/segment.scss",
+  "components/form.scss";
 
- 
+@import "./base/fonts.scss";

@@ -1,0 +1,34 @@
+.segment {
+  &__group {
+    @include flexAlignCenter(space-evenly);
+  }
+
+  &__item {
+    flex: 1;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    &:first-child {
+      margin-right: 2.8rem;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: $semantic-color-black-3;
+
+    &-active {
+      color: $semantic-color-black-4;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 100%;
+        display: block;
+        border-bottom: 3px solid $primary-color-main;
+        border-radius: 3px 3px 0 0;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@
     padding: 7.3em 0; 
     position: relative;
     height: 100%;
+    color: $semantic-color-white-1;
     &__image {
         height: 100%;
         object-fit: cover;
@@ -13,8 +14,6 @@
         top: 45%;
         letter-spacing: 2px;
         transform: translate(-53%, -45%); 
-        font-family: $font-default; 
         font-size: 7.47448rem;
-        color: #FFFFFF;
     }
 }

@@ -1,0 +1,17 @@
+.onboarding2 {
+  min-height: inherit;
+  @include flexAlignCenter(flex-end);
+  flex-direction: column;
+  background: url(../asset/images/smart-search.png) center 18.4rem no-repeat, url(../asset/images/shape/focus-square.svg) center 18.4rem no-repeat;
+  &__content {
+    padding-bottom: 16.3rem;
+  }
+  
+  //remainder title
+  // &__title {
+  // }
+
+  &__description {
+    color: $semantic-color-black-3;
+  }
+}
