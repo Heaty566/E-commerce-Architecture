@@ -8,5 +8,23 @@
 
   &__extra {
     @include flexAlignCenter(space-between);
+
+    .extra {
+      &__link {
+        border-radius: 1.94rem;
+        padding: 1rem 1.6rem;
+        box-shadow: 0rem 0.7rem 2.4rem rgba($color: #000000, $alpha: 0.083);
+        flex: 1;
+        @include flexAlignCenter(center);
+
+        &-facebook {
+          color: #3c5999;
+        }
+
+        &-google {
+          color: #d95032;
+        }
+      }
+    }
   }
 }

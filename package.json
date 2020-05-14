@@ -4,8 +4,7 @@
   "description": "This is a scss and html project build base on architecture",
   "main": "index.js",
   "scripts": {
-    "start:scss": "node-sass ./src/scss/main.scss ./src/css/style.comp.css --watch",
-    "build-watch-dev": "webpack-dev-server --config webpack.config.dev.js",
+    "build-watch-dev": "webpack-dev-server --config webpack.config.dev.js ",
     "build-dev": "webpack --config webpack.config.dev.js",
     "build-prod": "webpack --config webpack.config.prod.js"
   },

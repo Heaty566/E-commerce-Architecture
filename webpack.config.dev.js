@@ -1,73 +1,63 @@
 const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/js/index.js",
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "./dist"),
     publicPath: "dist",
   },
-  mode: "production",
+  mode: "devlopment",
+  devServer: {
+    index: "onboarding1.html",
+  },
   module: {
     rules: [
       {
-        test: /\.css$/,
-        exclude: /node_modules/,
+        test: /\.(jpg|png|svg)$/,
         use: {
-          loader: "babel-loader",
+          loader: "file-loader",
           options: {
-            presets: ["@babel/env"],
-            plugins: ["transform-class-properties"],
+            name: "[path][name].[ext]",
           },
         },
       },
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-      {
-        test: /\.html$/,
-        use: ["html-loader"],
-      },
+      { test: /\.html$/, loader: "html-loader" },
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(jpg|png|gif|svg)$/,
-        use: {
-          loader: "url-loader",
-          options: {
-            limit: 50000,
-            outputPath: "asset/images",
-          },
-        },
-      },
-
-      {
-        test: /\.(woff|eot|ttf|otf)/,
-        use: {
-          loader: "url-loader",
-          options: {
-            limit: 50000,
-            outputPath: "asset/fonts",
-          },
-        },
+        test: /\.(eot|woff|woff2|ttf|)$/,
+        loader: "url-loader",
       },
     ],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new TerserWebpackPlugin(),
-    new MiniCssExtractPlugin({
-      filename: "style.css",
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: "src/index.html",
     }),
     new HtmlWebpackPlugin({
-      template: "src/index.html",
+      filename: "login.html",
+      template: "src/html/login.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "onboarding1.html",
+      template: "src/html/onboarding1.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "onboarding2.html",
+      template: "src/html/onboarding2.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "onboarding3.html",
+      template: "src/html/onboarding3.html",
     }),
   ],
 };
