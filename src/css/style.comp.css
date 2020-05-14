@@ -64,8 +64,13 @@ li {
 .text__body-16 {
   font-size: 1.6em; }
 
+<<<<<<< HEAD
 .text__body-15 {
   font-size: 1.5rem; }
+=======
+.text__body-14 {
+  font-size: 1.4rem; }
+>>>>>>> 8fc618b5c8ec3884c54cc743d63af3aad25a35d3
 
 .u-m-b-1 {
   margin-bottom: 0.8rem; }
@@ -106,14 +111,20 @@ li {
 .u-p-4 {
   padding: 3.4rem; }
 
+<<<<<<< HEAD
 .u-p-x-3 {
   padding: 0 2.4rem; }
 
+=======
+>>>>>>> 8fc618b5c8ec3884c54cc743d63af3aad25a35d3
 .u-p-x-4 {
   padding: 0 3.2rem; }
 
 .u-p-x-7 {
   padding: 0 5.6rem; }
+
+.u-p-y-9 {
+  padding: 7.2rem 0; }
 
 .text-center {
   text-align: center; }
@@ -174,8 +185,14 @@ li {
   .onboarding3__description {
     color: #808080; }
 
-.login__header span {
-  display: block; }
+.login {
+  padding: 7rem 3.2rem; }
+  .login__header span {
+    display: block; }
+  .login__extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
 
 .terms__content {
   position: relative;
@@ -266,25 +283,38 @@ li {
     justify-content: space-between; }
     .form__group:not(:last-child) {
       border-bottom: 1px solid #ececec; }
-  .form__input {
-    overflow: hidden; }
-    .form__input label {
-      color: #808080;
-      text-transform: capitalize;
-      display: block;
-      overflow: hidden; }
-    .form__input input {
-      letter-spacing: 1px;
-      font-weight: 600;
-      padding-top: 0.8rem;
-      font-size: 1.7rem;
-      border: none;
-      outline: none; }
+  .form__input label {
+    color: #c9c9c9;
+    text-transform: capitalize; }
+  .form__input input {
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: block;
+    padding-top: 0.8rem;
+    font-size: 1.7rem;
+    max-width: 200px;
+    border: none;
+    outline: none; }
   .form__extra-check {
     margin-left: 5px; }
   .form__extra-link {
     margin-left: 5px;
-    color: #808080; }
+    color: #c9c9c9; }
+
+.btn {
+  outline: none;
+  border: none;
+  display: block;
+  cursor: pointer; }
+  .btn-submit {
+    font-size: 1.8rem;
+    padding: 1.6rem;
+    border-radius: 2.65rem;
+    color: #fefefe;
+    font-weight: lighter;
+    background-color: #fd3e75; }
+  .btn-big {
+    width: 100%; }
 
 .status-bars {
   padding: 1.6rem 2.1rem 2rem 3.5rem;

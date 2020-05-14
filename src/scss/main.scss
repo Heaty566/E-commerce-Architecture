@@ -11,6 +11,10 @@
 @import "themes/default";
 
 @import "components/indicator", "components/segment.scss",
+<<<<<<< HEAD
   "components/form.scss", "components/statusBars",  "components/navigationBar";
+=======
+  "components/form.scss", "components/button.scss";
+>>>>>>> 8fc618b5c8ec3884c54cc743d63af3aad25a35d3
 
 @import "./base/fonts.scss";
