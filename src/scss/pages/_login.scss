@@ -1,7 +1,12 @@
 .login {
+  padding: 7rem 3.2rem;
   &__header {
     span {
       display: block;
     }
+  }
+
+  &__extra {
+    @include flexAlignCenter(space-between);
   }
 }

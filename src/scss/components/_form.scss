@@ -5,26 +5,24 @@
     padding: 1.6rem 2.4rem;
     font-size: 1.5rem;
     @include flexAlignCenter(space-between);
-
     &:not(:last-child) {
       border-bottom: 1px solid $semantic-color-grey-3;
     }
   }
 
   &__input {
-    overflow: hidden;
     label {
-      color: $semantic-color-black-3;
+      color: $secondary-color-lightest;
       text-transform: capitalize;
-      display: block;
-      overflow: hidden;
     }
 
     input {
       letter-spacing: 1px;
       font-weight: 600;
+      display: block;
       padding-top: 0.8rem;
       font-size: 1.7rem;
+      max-width: 200px;
       border: none;
       outline: none;
     }
@@ -37,7 +35,7 @@
 
     &-link {
       margin-left: 5px;
-      color: $semantic-color-black-3;
+      color: $secondary-color-lightest;
     }
   }
 }
