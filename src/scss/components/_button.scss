@@ -3,14 +3,20 @@
   border: none;
   display: block;
   cursor: pointer;
+  background: transparent;
 
   &-submit {
-    font-size: 1.8rem;
     padding: 1.6rem;
     border-radius: 2.65rem;
     color: $semantic-color-white-1;
     font-weight: lighter;
     background-color: $primary-color-main;
+    font-size: 1.8rem;
+  }
+
+  &-decline {
+    padding: 1.6rem;
+    font-size: 1.6rem;
   }
 
   &-big {

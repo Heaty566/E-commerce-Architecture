@@ -1,4 +1,9 @@
 .text {
+  &__header-4 {
+    font-size: 1.7rem;
+    color: $semantic-color-black-4;
+  }
+
   &__header-3 {
     font-size: 2.2rem;
     color: $semantic-color-black-4;
@@ -25,6 +30,10 @@
 
   &__body-16 {
     font-size: 1.6em;
+  }
+
+  &__body-15 {
+    font-size: 1.5rem;
   }
 
   &__body-14 {

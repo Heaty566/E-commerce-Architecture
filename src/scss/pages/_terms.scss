@@ -1,0 +1,27 @@
+.terms {
+  &__content {
+    position: relative;
+    font-family: $font-custom;
+    overflow: hidden;
+    max-height: 61.2rem;
+  }
+
+  &__content::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba($semantic-color-black-1, 0),
+      rgba($semantic-color-white-1, 1) 100%
+    );
+    width: 100%;
+    height: 100%;
+  }
+
+  &__link {
+    color: #007aff;
+  }
+}

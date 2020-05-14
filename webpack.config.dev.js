@@ -10,9 +10,9 @@ module.exports = {
     path: path.resolve(__dirname, "./dist"),
     publicPath: "dist",
   },
-  mode: "devlopment",
+  mode: "development",
   devServer: {
-    index: "onboarding1.html",
+    index: "terms.html",
   },
   module: {
     rules: [
@@ -46,6 +46,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "login.html",
       template: "src/html/login.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "terms.html",
+      template: "src/html/terms.html",
     }),
     new HtmlWebpackPlugin({
       filename: "onboarding1.html",

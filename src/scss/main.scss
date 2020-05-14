@@ -6,11 +6,12 @@
 @import "layout/header", "layout/footer";
 
 @import "pages/home", "pages/launch", "pages/onboarding1", "pages/onboarding2",
-  "pages/onboarding3.scss", "pages/login.scss";
+  "pages/onboarding3.scss", "pages/login.scss", "pages/terms";
 
 @import "themes/default";
 
 @import "components/indicator", "components/segment.scss",
-  "components/form.scss", "components/button.scss";
+  "components/form.scss", "components/button.scss", "components/navigationBar",
+  "components/statusBars";
 
 @import "./base/fonts.scss";
