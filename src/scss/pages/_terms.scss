@@ -1,0 +1,21 @@
+.terms {
+    &__content {
+        position: relative;
+        font-family: $font-custom;
+    }
+
+    &__content::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 100%);
+        width: 100%;
+        height: 100%;
+    }
+
+    &__link {
+        color: #007AFF;
+    }
+}

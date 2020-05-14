@@ -1,0 +1,8 @@
+.navigation {
+    &-bar {
+        min-width: inherit;
+        padding: 0 2.4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
