@@ -12,7 +12,7 @@ module.exports = {
   },
   mode: "development",
   devServer: {
-    index: "terms.html",
+    index: "signUp.html",
   },
   module: {
     rules: [
@@ -62,6 +62,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "onboarding3.html",
       template: "src/html/onboarding3.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "signUp.html",
+      template: "src/html/signUp.html",
     }),
   ],
 };
