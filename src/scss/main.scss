@@ -6,12 +6,14 @@
 @import "layout/header", "layout/footer";
 
 @import "pages/home", "pages/launch", "pages/onboarding1", "pages/onboarding2",
-  "pages/onboarding3.scss", "pages/login.scss", "pages/terms", "pages/signUp";
+  "pages/onboarding3.scss", "pages/login.scss", "pages/terms", "pages/signUp",
+  "pages/explore";
 
 @import "themes/default";
 
 @import "components/indicator", "components/segment.scss",
   "components/form.scss", "components/button.scss", "components/navigationBar",
-  "components/statusBars";
+  "components/statusBars", "components/searchbox", "components/categories",
+  "components/collections", "components/footer", "components/iphoneFotter";
 
 @import "./base/fonts.scss";

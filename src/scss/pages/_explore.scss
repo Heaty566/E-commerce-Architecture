@@ -1,0 +1,39 @@
+.explore {
+  background-color: $semantic-color-grey-3;
+  min-height: inherit;
+
+  main {
+    font-family: $font-custom;
+  }
+
+  &__categories {
+    display: inline-flex;
+    & > * {
+      margin-right: 0.8rem;
+    }
+  }
+
+  &__collections {
+    display: inline-flex;
+    & > * {
+      margin-right: 0.8rem;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 3.4rem;
+  }
+
+  .navigation-bar {
+    .searchbox {
+      grid-column: 1 / 3;
+    }
+  }
+
+  .segment {
+    &__item:first-child {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.categorie {
+  &__item {
+    width: 16.7rem;
+    height: 26.1rem;
+    border-radius: 0 0 3.5rem 3.5rem;
+    overflow: hidden;
+    position: relative;
+
+    &-dresses {
+      background: url(../asset/images/shape/shape-model-dresses-front-face.svg)
+          center bottom no-repeat,
+        url(../asset/images/model-dresses.png) 70% 0% no-repeat,
+        url(../asset/images/shape/shape-model-dresses-back-face.svg) center
+          bottom no-repeat;
+    }
+
+    &-jackets {
+      background: url(../asset/images/shape/shape-model-jackets-front-face.svg)
+          center bottom no-repeat,
+        url(../asset/images/model-jackets.png) 35% -15% no-repeat,
+        url(../asset/images/shape/shape-model-jackets-back-face.svg) center
+          bottom no-repeat;
+    }
+
+    &-jeans {
+      background: url(../asset/images/shape/shape-model-jeans-front-face.svg)
+          center bottom no-repeat,
+        url(../asset/images/model-jeans.png) 35% -25% no-repeat,
+        url(../asset/images/shape/shape-model-jeans-back-face.svg) center bottom
+          no-repeat;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    text-align: center;
+    font-weight: unset;
+    width: inherit;
+    letter-spacing: 0.05rem;
+    bottom: 0.8rem;
+    color: $semantic-color-white-1;
+    font-size: 1.651rem;
+  }
+}

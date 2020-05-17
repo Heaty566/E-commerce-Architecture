@@ -1,16 +1,18 @@
 .sign-up {
   padding: 7rem 3.2rem;
 
-  strong {
-    color: $secondary-color-lightest;
-  }
-
   &__header {
     span {
       display: block;
       strong {
         color: $primary-color-main;
       }
+    }
+  }
+
+  &__terms {
+    span {
+      color: $secondary-color-lightest;
     }
   }
 

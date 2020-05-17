@@ -20,10 +20,19 @@
 
   &__span-16 {
     font-size: 1.6rem;
+  }
+
+  &__span-16-bold {
+    font-size: 1.6rem;
     font-weight: bold;
   }
 
-  &__span-20 {
+  &__span-17-bold {
+    font-size: 1.7rem;
+    font-family: bold;
+  }
+
+  &__span-20-medium {
     font-size: 2rem;
     font-weight: 500;
   }

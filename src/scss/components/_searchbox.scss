@@ -1,0 +1,34 @@
+.searchbox {
+  width: 100%;
+  height: 36px;
+  background: #e1e1e1;
+  &__group {
+    padding: 0rem 1.1rem;
+    background: $semantic-color-white-1;
+    height: inherit;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    border-radius: 1.8rem;
+    box-shadow: 0rem 0.8rem 2.5rem rgba($semantic-color-black-1, 0.102901);
+  }
+
+  &__icon {
+    &-main {
+      margin-right: 0.4rem;
+    }
+  }
+
+  &__control {
+    border: none;
+    flex: 1;
+    background-color: transparent;
+    outline: none;
+    display: block;
+    letter-spacing: 0.05rem;
+    &::placeholder {
+      color: $semantic-color-black-3;
+    }
+  }
+}
